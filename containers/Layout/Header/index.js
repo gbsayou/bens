@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Menu from "./Menu";
 import Logo from "@/components/Logo";
-import Profile from "@/components/Profile";
 import Hamburger from "./Hamburger";
 import styles from "./index.module.scss";
 
@@ -21,15 +20,11 @@ const Header = () => {
           <Menu />
         </div>
 
-        <div className={styles.profile}>
-          <Profile />
-        </div>
       </header>
 
       <div className={`${styles["mobile-menu"]} ${showMobileMenu?styles['mobile-menu-show']:''}`}>
             <Logo />
             <Menu />
-            <Profile />
           </div>
 
       {showMobileMenu && (

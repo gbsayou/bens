@@ -1,11 +1,10 @@
-import { connect } from "react-redux";
 import ContentBody from "@/components/ContentBody";
 import ContentContainer from "@/components/ContentContainer";
 import { ShortImage as HeroImage } from "@/components/HeroImage";
 import ArticleList from "@/components/ArticleList";
 import Description from "./Description";
 
-const TravelContainer = ({ category }) => {
+const CategoryContainer = ({ category }) => {
   const { name, heroImage, description, features } = category;
   return (
     <div>
@@ -23,8 +22,4 @@ const TravelContainer = ({ category }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  category: state.category.category,
-});
-
-export default connect(mapStateToProps, null)(TravelContainer);
+export default CategoryContainer
