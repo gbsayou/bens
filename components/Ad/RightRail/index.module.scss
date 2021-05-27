@@ -1,0 +1,13 @@
+.wrapper{
+  width: 300px;
+  height: 800px;
+  border: 3px solid;
+  text-align: center;
+  font-size: 95px;
+  padding: 0 55px;  
+  position: sticky;
+  top: 10px;
+  @media (max-width: 900px){
+    display: none;
+  }
+}

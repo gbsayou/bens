@@ -1,0 +1,15 @@
+.carousel {
+  margin-bottom: 50px;
+
+  .item {
+    position: relative;
+    display: block !important;
+
+    @media (max-width: 900px) {
+      padding-bottom: 40px;
+      background: gray;
+    }
+
+
+  }
+}

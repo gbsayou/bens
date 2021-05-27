@@ -1,0 +1,59 @@
+.nav {
+  border-top: 1px solid #dadce0;
+  padding: 50px 32px;
+  @media (max-width: 900px) {
+    padding: 50px 20px;
+  }
+
+  .grid {
+    display: flex;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    .column {
+      @media (min-width: 901px) {
+        width: 20%;
+        max-width: 20%;
+      }
+
+      .header {
+        font-size: 18px;
+        margin: 0;
+        height: 40px;
+      }
+
+      .intro {
+        color: #5f6368;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        margin: 0;
+
+        @media (min-width: 901px) {
+          width: 80%;
+        }
+      }
+
+      .list {
+        .item {
+          padding-bottom: 18px;
+          font-size: 16px;
+          letter-spacing: 0px;
+
+          @media (min-width: 901px) {
+            margin: 0 40px 0 0;
+          }
+
+          .link {
+            color: #5f6368;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.25px;
+          }
+        }
+      }
+    }
+  }
+}

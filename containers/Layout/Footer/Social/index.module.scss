@@ -1,0 +1,28 @@
+.group {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin: 30px 32px 0;
+  @media (max-width: 900px){
+    margin: 30px 20px 0;
+  }
+
+  .list {
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+
+    .item {
+      display: flex;
+      height: 100%;
+      width: 44px;
+
+      .link {
+        width: 44px;
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+      }
+    }
+  }
+}

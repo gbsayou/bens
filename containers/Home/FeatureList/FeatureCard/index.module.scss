@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  margin-bottom: 12px;
+  @media (min-width: 901px) {
+    height: 360px;
+  }
+  @media (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+
+  .promotes {
+    @media (min-width: 901px) {
+      width: 66%;
+    }
+
+    &.alternative {
+      @media (min-width: 901px) {
+        order: 1;
+        padding-left: 16px;
+      }
+    }
+
+    .list {
+      padding: 0;
+    }
+  }
+}

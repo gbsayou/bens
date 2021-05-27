@@ -1,0 +1,26 @@
+.card {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dadce0;
+
+  .text-wrapper{
+    display: inline-block;
+    @media (max-width: 900px){
+      width: 75%;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      color: black;
+    }
+  }
+
+  .cover {
+    display: inline-block;
+    width: 160px;
+    height: 120px;
+  }
+}
