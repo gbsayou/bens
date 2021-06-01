@@ -1,0 +1,26 @@
+.card {
+  margin-bottom: 20px;
+
+  .link {
+
+    .image {
+      height: 275px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .title {    
+      background-color: rgb(19, 210, 241);
+      h2 {
+        font-size: 42px;
+        line-height: 42px;
+        text-align: center;
+        color: white;
+        padding: 20px;
+      }
+    }
+  }
+}
