@@ -2,15 +2,13 @@ import { HighImage } from "@/components/HeroImage";
 import ContentBody from "@/components/ContentBody";
 import ContentContainer from "@/components/ContentContainer";
 import ArticleBody from "./ArticleBody";
-const cmsHost = process.env.cmsHost
+const imgHost = process.env.imgHost
 
 const ArticleContainer = ({ article }) => {
   const {
-    coverImage: {
-      alternativeText,
-      formats: {
-        medium: { url: heroImage },
-      },
+    heroImage: {
+      alt,
+      src,
     },
     title,
     content
@@ -19,9 +17,9 @@ const ArticleContainer = ({ article }) => {
   return (
     <div>
       <HighImage
-        src={heroImage.startsWith("/") ? `${cmsHost}${heroImage}` : heroImage}
+        src={src.startsWith("/images") ? `${imgHost}${src}` : src}
         title={title}
-        alt={alternativeText}
+        alt={alt}
       />
       <ContentBody>
         <ContentContainer>

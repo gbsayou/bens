@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 
-const HeroImage = ({ title, src, description }) => {
+const HeroImage = ({ title, src, description, alt }) => {
   return (
     <div className={styles.hero}>
       <div className={styles["text-wrapper"]}>
@@ -11,7 +11,7 @@ const HeroImage = ({ title, src, description }) => {
         )}
       </div>
 
-      <img className={styles.image} src={src} alt="Picture of the author" />
+      <img className={styles.image} src={src} alt={alt} />
 
       {description && (
         <div className={styles["mobile-description"]}>{description}</div>

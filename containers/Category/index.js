@@ -3,15 +3,14 @@ import ContentContainer from "@/components/ContentContainer";
 import { HighImage as HeroImage } from "@/components/HeroImage";
 import FeedCard from "@/components/FeedCard";
 import Description from "./Description";
-const cmsHost = process.env.cmsHost
+const imgHost = process.env.imgHost
 
 const CategoryContainer = ({ category }) => {
-  const { name, heroImage, description, posts } = category;
-  const heroImageSrc = heroImage?.formats?.medium.url || ''
-  const imageSrc = heroImageSrc.startsWith('/uploads')? `${cmsHost}${heroImageSrc}`: heroImageSrc
+  const { name, heroImage:{src,alt}, description, posts } = category;
+  const imageSrc = src.startsWith('/images')? `${imgHost}${src}`: src
   return (
     <div>
-      <HeroImage src={imageSrc} title={name} />
+      <HeroImage src={imageSrc} title={name} alt={alt}/>
 
       <ContentBody>
         <ContentContainer>

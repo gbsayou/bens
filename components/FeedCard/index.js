@@ -1,14 +1,13 @@
 import styles from "./index.module.scss";
-const cmsHost = process.env.cmsHost
+const imgHost = process.env.imgHost
 
-const FeedCard = ({coverImage, title, slug})=>{
-  const coverImageSrc = coverImage?.formats?.small.url || ''
-  const imageSrc = coverImageSrc.startsWith('/uploads')? `${cmsHost}${coverImageSrc}`: coverImageSrc
+const FeedCard = ({heroImage:{src, alt}, title, slug})=>{
+  const imageSrc = src.startsWith('/images')? `${imgHost}${src}`: src
   return (
     <div className={styles.card}>
       <a href={`/a/${slug}`} className={styles.link}>
         <div className={styles.image}>
-          <img src={imageSrc}/>
+          <img src={imageSrc} alt={alt}/>
         </div>
         <div className={styles.title}>
           <h2>{title}</h2>
