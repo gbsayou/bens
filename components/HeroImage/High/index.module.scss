@@ -4,7 +4,7 @@
 
 .text-wrapper {
   color: white;
-  width: 500px;
+  width: 80%;
   position: absolute;
   left: 68px;
   top: 36%;
@@ -19,11 +19,13 @@
 
   h2 {
     font-size: 56px;
+    font-family: Open Sans;
     @media (max-width: 900px) {
       font-size: 45px;
     }
   }
   p {
+    font-family: Open Sans;
     font-size: 18px;
   }
 }

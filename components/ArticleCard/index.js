@@ -1,19 +1,20 @@
 import styles from "./index.module.scss";
+const cmsHost = process.env.cmsHost
 
-const ArticleCard = ({ link, name, cover }) => {
+const ArticleCard = ({ slug, title, coverImage }) => {
+  const coverImageSrc = coverImage?.formats?.small.url || ''
+  const imageSrc = coverImageSrc.startsWith('/uploads')? `${cmsHost}${coverImageSrc}`: coverImageSrc
   return (
     <div className={styles.card}>
+      <a href={`/a/${slug}`} className={styles.link}>
       <div className={styles["text-wrapper"]}>
-        <a className={styles.title} href={link}>
-          {name}
-        </a>
+        <h2 className={styles.title}>{title}</h2>
       </div>
 
       <div className={styles.cover}>
-        <a href={link}>
-          <img src={cover}></img>
-        </a>
+          <img src={imageSrc}></img>
       </div>
+        </a>
     </div>
   );
 };

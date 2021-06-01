@@ -1,18 +1,12 @@
-import Head from "next/head";
 import styles from "./index.module.scss";
 import Header from "./Header";
+import Meta from "@/components/Meta";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, metadata={} }) => {
   return (
     <>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-      </Head>
+      <Meta metadata={metadata} />
       <Header />
       <div className={styles.container}>
         <main>{children}</main>

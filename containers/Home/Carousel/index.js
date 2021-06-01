@@ -34,26 +34,26 @@ Carousel.defaultProps = {
     {
       title: "Where to go",
       src: "/images/fuji-mountain.png",
-      link: "/travel",
+      link: "/category/travel",
       description: "We will tell you where to go all over the world",
     },
     {
       title: "What Coffee to Buy",
       src: "/images/food-and-drink.png",
-      link: "/food-and-drink",
+      link: "/category/food-and-drink",
       description:
         "You can find out what coffee to buy here, like starbucks, quechao, and sandunban.",
     },
     {
       title: "Best Traveling Destinations",
       src: "/images/fuji-mountain.png",
-      link: "/travel",
+      link: "/category/travel",
       description: "Have a look at best travel destination, and go!",
     },
     {
       title: "What to drink tonight",
       src: "/images/food-and-drink.png",
-      link: "/food-and-drink",
+      link: "/category/food-and-drink",
       description: "Wanna a drink? come and find it!",
     },
   ],

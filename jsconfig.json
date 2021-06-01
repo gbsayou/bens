@@ -5,6 +5,7 @@
       "@/components/*": ["components/*"],
       "@/assets/*": ["assets/*"],
       "@/containers/*": ["containers/*"],
+      "@/lib/*": ["lib/*"],
     }
   }
 }

@@ -1,21 +1,24 @@
 import ContentBody from "@/components/ContentBody";
 import ContentContainer from "@/components/ContentContainer";
-import { ShortImage as HeroImage } from "@/components/HeroImage";
-import ArticleList from "@/components/ArticleList";
+import { HighImage as HeroImage } from "@/components/HeroImage";
+import FeedCard from "@/components/FeedCard";
 import Description from "./Description";
+const cmsHost = process.env.cmsHost
 
 const CategoryContainer = ({ category }) => {
-  const { name, heroImage, description, features } = category;
+  const { name, heroImage, description, posts } = category;
+  const heroImageSrc = heroImage?.formats?.medium.url || ''
+  const imageSrc = heroImageSrc.startsWith('/uploads')? `${cmsHost}${heroImageSrc}`: heroImageSrc
   return (
     <div>
-      <HeroImage src={heroImage} title={name} />
+      <HeroImage src={imageSrc} title={name} />
 
       <ContentBody>
         <ContentContainer>
           <Description description={description} />
-          {features.map((feature) => (
-            <ArticleList key={feature.name} {...feature} />
-          ))}
+      {posts.map((article) => (
+        <FeedCard key={article.title} {...article} />
+      ))}
         </ContentContainer>
       </ContentBody>
     </div>

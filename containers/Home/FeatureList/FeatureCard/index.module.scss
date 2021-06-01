@@ -9,6 +9,12 @@
   }
 
   .promotes {
+    h3 {
+      font-family: Open Sans;
+    }
+    p {
+      font-family: Open Sans;
+    }
     @media (min-width: 901px) {
       width: 66%;
     }
@@ -22,6 +28,9 @@
 
     .list {
       padding: 0;
+      li a {
+        font-family: Open Sans;
+      }
     }
   }
 }

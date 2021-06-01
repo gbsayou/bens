@@ -1,14 +1,13 @@
-
-import Head from "next/head";
 import Layout from "@/containers/Layout";
 import HomeContainer from "@/containers/Home";
 
 const Home = ({}) => {
+  const metadata = {
+    title: "BenS",
+    description: "visit BenS for guides",
+  };
   return (
-    <Layout>
-    <Head>
-      <title>Ben Style</title>
-    </Head>
+    <Layout metadata={metadata}>
       <HomeContainer />
     </Layout>
   );
