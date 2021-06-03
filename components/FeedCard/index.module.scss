@@ -1,5 +1,6 @@
 .card {
   margin-bottom: 20px;
+  background-color: rgb(19, 210, 241);
 
   .link {
 
@@ -13,13 +14,17 @@
       }
     }
     .title {    
-      background-color: rgb(19, 210, 241);
       h2 {
+        font-family: Open Sans;
         font-size: 42px;
         line-height: 42px;
         text-align: center;
         color: white;
         padding: 20px;
+        @media (max-width: 900px){
+          font-size: 28px;
+          line-height: 32px;
+        }
       }
     }
   }

@@ -19,8 +19,8 @@ const Column = ({ header, list }) => {
       <div>
         <ul className={styles.list}>
           {list.map((item) => (
-            <li className={styles.item} key={item.name}>
-              <a className={styles.link}>{item.name}</a>
+            <li className={styles.item} key={item.title}>
+              <a className={styles.link} href={item.link}>{item.title}</a>
             </li>
           ))}
         </ul>
@@ -33,39 +33,63 @@ const SiteLink = () => {
   const popularArticles = {
     header:'Most Popular',
     list:[
-      {name:'What Coffee to Buy'},
-      {name:'What Movie to Watch1'},
-      {name:'What Movie to Watch2'},
-      {name:'What Movie to Watch3'},
-      {name:'What Movie to Watch4'},
-      {name:'What Movie to Watch5'},
+      { 
+        title: "Top 10 Popular Coffee Brands in The World",
+        link: '/a/top-10-popular-coffee-brands-in-the-world'
+       },
+      { 
+        title: "What Coffee to Buy",
+        link: '/a/what-coffee-to-buy'
+       },
+       { 
+        title: "Elliðaey, the forgotten island",
+        link: '/a/ellidaey-the-forgotten-island'
+       },
+      { 
+        title: "Top 10 travel destinations in the US",
+        link: '/a/top-10-travel-destinations-in-the-us'
+       },
     ]
   }
   const FoodAndDrink = {
     header:'Food & Drink',
     list: [
-      {name:'What Coffee to Buy'},
-      {name:'What Wine to Buy'}
+      { 
+        title: "Top 10 Popular Coffee Brands in The World",
+        link: '/a/top-10-popular-coffee-brands-in-the-world'
+       },
+      { 
+        title: "What Coffee to Buy",
+        link: '/a/what-coffee-to-buy'
+       },
     ]
   }
-  const aboutUs = {
-    header: "About Us",
-    list: [
-      { name: "Who are we" },
-      { name: "Contact us" },
-      { name: "Advertise with us" },
-      { name: "Privacy Policy" },
-      { name: "Terms & Conditions" },
-      { name: "Do Not Sell My Info" },
-    ],
-  };
+
   const travelDestination = {
     header:'Travel Destination',
     list:[
-      { name:'Fuji Mountain'},
-      { name:'Hawaii'},
+      { 
+        title: "Elliðaey, the forgotten island",
+        link: '/a/ellidaey-the-forgotten-island'
+       },
+      { 
+        title: "Top 10 travel destinations in the US",
+        link: '/a/top-10-travel-destinations-in-the-us'
+       },
     ]
   }
+
+  const aboutUs = {
+    header: "About Us",
+    list: [
+      { title: "Who are we" },
+      { title: "Contact us" },
+      { title: "Advertise with us" },
+      { title: "Privacy Policy" },
+      { title: "Terms & Conditions" },
+      { title: "Do Not Sell My Info" },
+    ],
+  };
   
   return (
     <nav className={styles.nav}>

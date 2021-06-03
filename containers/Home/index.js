@@ -9,17 +9,31 @@ const Home = () => {
       title: "Find out delicious food and drink",
       desc: "Here we introduce a lot of food and drink for you, have a look!",
       image: "/images/coffee.png",
-      list: [{ name: "What Coffee to Buy1" }],
+      list: [
+        { 
+          title: "Top 10 Popular Coffee Brands in The World",
+          link: '/a/top-10-popular-coffee-brands-in-the-world'
+         },
+        { 
+          title: "What Coffee to Buy",
+          link: '/a/what-coffee-to-buy'
+         },
+      ],
     },
     {
       title: "Best travel destination in the world",
       desc: "Find out the most beautiful and fun tourist destinations in the world selected by everyone",
       order: "alternative",
-      image: "/images/coffee.png",
+      image: "/images/travel.png",
       list: [
-        { name: "What Coffee to Buy2" },
-        { name: "What Coffee to Buy3" },
-        { name: "What Coffee to Buy4" },
+        { 
+          title: "Elliðaey, the forgotten island",
+          link: '/a/ellidaey-the-forgotten-island'
+         },
+        { 
+          title: "Top 10 travel destinations in the US",
+          link: '/a/top-10-travel-destinations-in-the-us'
+         },
       ],
     },
   ];

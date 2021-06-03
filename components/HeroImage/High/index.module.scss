@@ -20,8 +20,10 @@
   h2 {
     font-size: 56px;
     font-family: Open Sans;
+    text-transform: capitalize;
     @media (max-width: 900px) {
-      font-size: 45px;
+      font-size: 36px;
+      line-height: 46px;
     }
   }
   p {

@@ -11,9 +11,9 @@ const FeatureCard = ({ title, desc, list, image, order = "default" }) => {
         <p className={styles.desc}>{desc}</p>
 
         <ul className={styles.list}>
-          {list.map((link) => (
-            <li className={styles.item} key={link.name}>
-              <a>{link.name}</a>
+          {list.map((article) => (
+            <li className={styles.item} key={article.title}>
+              <a href={article.link}>{article.title}</a>
             </li>
           ))}
         </ul>

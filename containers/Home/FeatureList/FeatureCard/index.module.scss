@@ -33,4 +33,11 @@
       }
     }
   }
+
+  .image{
+    @media (min-width: 901px) {
+      width: 380px;
+      height: 300px;
+    }
+  }
 }
