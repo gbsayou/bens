@@ -2,10 +2,11 @@ import React from "react";
 import Layout from "@/containers/Layout";
 import CategoryContainer from "@/containers/Category";
 import { getCategoriesSummary, getCategoryDetail } from "@/lib/api";
+import {capitalize} from "lodash"
 
 const Category = ({ category }) => {
   const metadata = {
-    title: category.name,
+    title: category.name.replace(/-/g, ' ').split(' ').map(capitalize).join(' '),
     description: category.description,
   };
   return (

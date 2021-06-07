@@ -17,8 +17,8 @@ const Menu = ({ navs }) => {
 Menu.defaultProps = {
   navs: [
     { name: "Home", link:'/' },
-    { name: "Foods & Drink", link:'/category/food-and-drink' },
-    { name: "Travel", link:'/category//travel'},
+    { name: "Food & Drink", link:'/category/food-and-drink' },
+    { name: "Travel", link:'/category/travel'},
     { name: "My Favorites" },
   ],
 };
