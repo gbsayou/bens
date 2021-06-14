@@ -8,15 +8,16 @@ const imgHost = process.env.imgHost;
 const CategoryContainer = ({ category }) => {
   const {
     name,
-    heroImage: { src, alt },
+    heroImage: { src, mobileSrc, alt },
     description,
     posts,
   } = category;
-  const imageSrc = src.startsWith("/images") ? `${imgHost}${src}` : src;
+  const desktopImage = src.startsWith("/images") ? `${imgHost}${src}` : src;
+  const mobileImage = mobileSrc.startsWith("/images") ? `${imgHost}${mobileSrc}` : mobileSrc;
   
   return (
     <div>
-      <HeroImage src={imageSrc} title={name.replace(/-/g, ' ')} alt={alt} />
+      <HeroImage desktopImage={desktopImage} mobileImage={mobileImage} title={name.replace(/-/g, ' ')} alt={alt} />
 
       <ContentBody>
         <ContentContainer>

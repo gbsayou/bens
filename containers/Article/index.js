@@ -9,17 +9,22 @@ const ArticleContainer = ({ article }) => {
     heroImage: {
       alt,
       src,
+      mobileSrc
     },
     title,
     content
   } = article;
 
+  const desktopHeroImage = src.startsWith("/images") ? `${imgHost}${src}` : src
+  const mobileHeroImage = mobileSrc.startsWith("/images") ? `${imgHost}${mobileSrc}` : mobileSrc
+
   return (
     <div>
       <HighImage
-        src={src.startsWith("/images") ? `${imgHost}${src}` : src}
         title={title}
         alt={alt}
+        desktopImage={desktopHeroImage}
+        mobileImage={mobileHeroImage}
       />
       <ContentBody>
         <ContentContainer>
