@@ -32,31 +32,31 @@ const Carousel = ({ list }) => {
 Carousel.defaultProps = {
   list: [
     {
-      title: "Where to go",
+      title: "Where to Go",
       desktopImage: "/images/fuji-mountain.png",
-      mobileImage: "/images/fuji-mountain.png",
+      mobileImage: "/images/fuji-mountain-mobile.png",
       link: "/category/travel",
       description: "We will tell you where to go all over the world",
     },
     {
-      title: "What Coffee to Buy",
+      title: "What to Eat",
       desktopImage: "/images/food-and-drink.png",
-      mobileImage: "/images/food-and-drink.png",
+      mobileImage: "/images/food-and-drink-mobile.png",
       link: "/category/food-and-drink",
       description:
-        "You can find out what coffee to buy here, like starbucks, quechao, and sandunban.",
+        "What to eat tonight? What to eat while traveling",
     },
     {
       title: "Best Traveling Destinations",
-      desktopImage: "/images/fuji-mountain.png",
-      mobileImage: "/images/fuji-mountain.png",
+      desktopImage: "/images/angkor-wat.png",
+      mobileImage: "/images/angkor-wat-mobile.png",
       link: "/category/travel",
       description: "Have a look at best travel destination, and go!",
     },
     {
       title: "What to drink tonight",
-      desktopImage: "/images/food-and-drink.png",
-      mobileImage: "/images/food-and-drink.png",
+      desktopImage: "/images/wine.png",
+      mobileImage: "/images/wine-mobile.png",
       link: "/category/food-and-drink",
       description: "Wanna a drink? come and find it!",
     },

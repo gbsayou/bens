@@ -7,33 +7,45 @@ const Home = () => {
   const features = [
     {
       title: "Find out delicious food and drink",
-      desc: "Here we introduce a lot of food and drink for you, have a look!",
+      desc: "We are here to recommend delicious foods worth buying, as well as special foods from all over the world",
       image: "/images/coffee.png",
       list: [
-        { 
-          title: "Top 10 Popular Coffee Brands in The World",
-          link: '/a/top-10-popular-coffee-brands-in-the-world'
-         },
-        { 
-          title: "What Coffee to Buy",
-          link: '/a/what-coffee-to-buy'
-         },
+        {
+          title: "9 Restaurants Worth Visiting In New York City",
+          link: "/a/9-restaurants-worth-visiting-in-new-york-city",
+        },
+        {
+          title: "Classic Japanese Food",
+          link: "/a/classic-japanese-food",
+        },
+        {
+          title: "What And Where To Eat In Chicago",
+          link: "/a/what-and-where-to-eat-in-chicago",
+        }
       ],
     },
     {
       title: "Best travel destination in the world",
-      desc: "Find out the most beautiful and fun tourist destinations in the world selected by everyone",
+      desc: "Want to travel? Find out the most beautiful and fun tourist destinations in the world",
       order: "alternative",
       image: "/images/travel.png",
       list: [
-        { 
-          title: "Elliðaey, the forgotten island",
-          link: '/a/ellidaey-the-forgotten-island'
-         },
-        { 
-          title: "Top 10 travel destinations in the US",
-          link: '/a/top-10-travel-destinations-in-the-us'
-         },
+        {
+          title: "Chicago Is What A Great City",
+          link: "/a/chicago-is-what-a-great-city",
+        },
+        {
+          title: "New York, The Most Popular City In The US",
+          link: "/a/new-york-the-most-popular-city-in-the-us",
+        },
+        {
+          title: "Elliðaey, The Forgotten Island",
+          link: "/a/ellidaey-the-forgotten-island",
+        },
+        {
+          title: "Top 5 Travel Cities In The US",
+          link: "/a/top-5-travel-destinations-in-the-us",
+        },
       ],
     },
   ];

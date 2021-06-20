@@ -1,0 +1,19 @@
+.container {
+  width: 660px;
+  font-family: Open Sans;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    background: #f8eee2;
+    height: 120px;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 55px;
+    }
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+}

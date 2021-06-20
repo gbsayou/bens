@@ -5,7 +5,7 @@ const ContentBody = ({ children, showRightRail = true }) => {
   return (
     <div className={style.content}>
       {children}
-      {showRightRail && <RightRail />}
+      {/* {showRightRail && <RightRail />} */}
     </div>
   );
 };

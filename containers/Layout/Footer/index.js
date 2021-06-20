@@ -4,7 +4,7 @@ import SiteLink from "./SiteLink";
 const Footer = () => {
   return (
     <footer>
-      <FollowUs />
+      {/* <FollowUs /> */}
       <SiteLink />
     </footer>
   );
