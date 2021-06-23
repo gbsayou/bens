@@ -6,7 +6,7 @@ import {capitalize} from "lodash"
 
 const Category = ({ category }) => {
   const metadata = {
-    title: category.name.replace(/-/g, ' ').split(' ').map(capitalize).join(' '),
+    title: `${category.name.replace(/-/g, ' ').split(' ').map(capitalize).join(' ')} | Bens`,
     description: category.description,
   };
   return (
